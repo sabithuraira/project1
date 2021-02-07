@@ -21,3 +21,4 @@ Route::get('/halo', function () {
 });
 
 Route::get('/home/halo', [HomeController::class, 'halo']);
+Route::get('/home/haloname/{name}', [HomeController::class, 'haloWithName']);
