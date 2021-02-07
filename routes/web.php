@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,3 +15,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/halo', function () {
+    return "Halo programmer";
+});
+
+Route::get('/home/halo', [HomeController::class, 'halo']);
